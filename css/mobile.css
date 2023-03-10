@@ -1,0 +1,53 @@
+@media screen and (max-width: 1024px) {
+  .left {
+    display: none;
+  }
+
+  .quote {
+    font-size: 57px;
+  }
+
+  .col-5 {
+    width: 100%;
+  }
+
+  .col-7 {
+    width: 100%;
+  }
+
+  .fixed-top,
+  .block,
+  #menu {
+    padding: 0 17px 0 17px;
+  }
+
+  .wrapper {
+    padding-top: 151px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo {
+    margin: 0;
+    width: 78px;
+    height: 60px;
+  }
+  .image-container-1 .image:first-child {
+    top: 215px;
+    /* width: 100%; */
+
+    left: 0;
+  }
+
+  .image-container-1 .image:nth-child(2) {
+    top: 97px;
+
+    right: 28%;
+  }
+
+  .image-container-1 .image:last-child {
+    top: 204px;
+    right: 0;
+  }
+}
