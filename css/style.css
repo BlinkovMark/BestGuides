@@ -33,6 +33,8 @@ body::-webkit-scrollbar {
 .wrapper {
   display: flex;
   width: 100%;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 .italic {
   font-family: "ITC GaramondStd Light Narrow Italic";
@@ -41,16 +43,55 @@ body::-webkit-scrollbar {
   transform: rotate(270deg);
   margin-right: 19px;
 }
-ul {
+
+.link li {
+  padding-right: 40px;
+  display: inline-block;
+}
+.social {
+  padding-left: 64px;
   display: flex;
+  justify-content: end;
 }
 
-li {
+.social li {
+  padding-right: 0px;
   display: inline-block;
 }
 
 .separator {
   margin: 0 8px 0 9px;
+}
+.menu-list a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.menu-list {
+  font-family: "ITC GaramondStd Light Narrow";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 76px;
+  line-height: 96%;
+  /* identical to box height, or 73px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-list a:hover {
+  color: #ffca8c;
+  transition: 0.5s;
+}
+.menu-list ul li {
+  justify-content: center;
+
+  display: flex;
+
+  flex-direction: row;
 }
 
 .place {
@@ -81,13 +122,13 @@ li {
 
 .block {
   width: 100%;
-  height: 860px;
-  /* height: 100vh; */
+  /* height: 860px; */
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
 
-.slider-element {
+.slides {
   border-radius: 32.5px;
 }
 
@@ -124,11 +165,11 @@ li {
   transform-origin: left top;
 }
 .image-container-2 .image:nth-child(2) {
-  top: -7.4rem;
+  top: -8.5rem;
   right: 30%;
 }
 .image-container-2 .image:nth-child(3) {
-  top: 9.5rem;
+  top: 11rem;
   right: 28%;
   z-index: 1;
 }
@@ -136,6 +177,15 @@ li {
   top: 2rem;
   right: 0;
   transform-origin: right top;
+}
+
+.iglupark {
+  border-radius: 40px;
+}
+
+.vertical-image {
+  margin-top: 98px;
+  width: 100%;
 }
 
 h6 {
@@ -151,10 +201,13 @@ h6 {
   padding-right: 35px;
 }
 
-.col-8 {
+.discover {
+  font-size: 76px;
+}
+
+.col-xl-8 {
   width: 425px;
-  height: 609px;
-  align-self: s;
+
   display: block;
   margin-left: auto;
 }
@@ -178,7 +231,7 @@ h6 {
 }
 
 .button-mt {
-  top: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 .description {
@@ -223,7 +276,6 @@ h6 {
 
 .menu-button {
   color: #1a2240;
-  width: 129px;
 }
 
 .menu-button::before {
@@ -273,7 +325,7 @@ h6 {
   color: #ffffff;
 }
 #menu {
-  padding: 0 9.625rem 0 9.625rem;
+  /* padding: 0 9.625rem 0 9.625rem; */
   position: fixed;
   top: -100%;
   left: 0;
@@ -286,6 +338,8 @@ h6 {
 }
 
 footer {
+  display: flex;
+  align-items: center;
   height: 130px;
   background-color: black;
 }
