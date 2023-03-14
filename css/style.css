@@ -48,10 +48,17 @@ body::-webkit-scrollbar {
   padding-right: 40px;
   display: inline-block;
 }
-.social {
+footer .social {
   padding-left: 64px;
   display: flex;
   justify-content: end;
+}
+
+.social {
+  justify-content: center;
+  display: flex;
+  align-items: end;
+  opacity: 0.5;
 }
 
 .social li {
@@ -67,20 +74,6 @@ body::-webkit-scrollbar {
   color: white;
   text-decoration: none;
 }
-.menu-list {
-  font-family: "ITC GaramondStd Light Narrow";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 76px;
-  line-height: 96%;
-  /* identical to box height, or 73px */
-
-  text-align: center;
-  letter-spacing: -0.01em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .menu-list a:hover {
   color: #ffca8c;
@@ -92,6 +85,27 @@ body::-webkit-scrollbar {
   display: flex;
 
   flex-direction: row;
+}
+
+.menu-list {
+  font-family: "ITC GaramondStd Light Narrow";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 76px;
+  line-height: 96%;
+
+  text-align: center;
+  letter-spacing: -0.01em;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+}
+
+.menu-list li {
+  padding-bottom: 1rem;
 }
 
 .place {

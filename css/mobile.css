@@ -30,13 +30,23 @@
     padding-right: 0px;
   }
 
-  .fixed-top,
+  /* .fixed-top,
   #menu {
+    padding: 0 17px 0 17px;
+  } */
+
+  .container-fluid {
     padding: 0 17px 0 17px;
   }
 
-  #menu {
-    padding: 268px 17px;
+  .menu-list {
+    font-size: 37.9852px;
+
+    /* padding: 268px 17px; */
+  }
+
+  .menu-list li {
+    padding-bottom: 1.5rem;
   }
 
   .block {
